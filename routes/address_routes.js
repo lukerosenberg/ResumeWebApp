@@ -5,7 +5,7 @@ var address_dal = require('../model/address_dal');
 
 // View All addresses
 router.get('/all', function(req, res) {
-    address.getAll(function(err, result){
+    address_dal.getAll(function(err, result){
         if(err) {
             res.send(err);
         }
